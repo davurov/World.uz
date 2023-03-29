@@ -55,5 +55,12 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func guestPressed(_ sender: Any) {
+        pushVC()
+    }
+    
+    func pushVC() {
+        let vc = MainVC(nibName: "MainVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
 }

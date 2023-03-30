@@ -18,6 +18,7 @@
                 <outlet property="searchTF" destination="WVc-Sz-tZ7" id="4Ke-Gt-tgm"/>
                 <outlet property="searchView" destination="dtJ-W8-aEO" id="2Wy-Ro-Psc"/>
                 <outlet property="sideMenuView" destination="Uxd-4a-Yqo" id="4cj-tu-tmM"/>
+                <outlet property="signOut" destination="WRk-NX-vHU" id="LUO-kP-5BN"/>
                 <outlet property="tableView" destination="CaI-sU-3D6" id="VWx-NE-IrZ"/>
                 <outlet property="univerView" destination="yTx-uc-PXM" id="sLx-tg-E8f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -72,6 +73,9 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" weight="bold"/>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="searchBtnPressed:" destination="-1" eventType="touchUpInside" id="qFu-kL-UXI"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtJ-W8-aEO">
                             <rect key="frame" x="10" y="140" width="373" height="50"/>
@@ -535,6 +539,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain"/>
+                                    <connections>
+                                        <action selector="signOut:" destination="-1" eventType="touchUpInside" id="Iqn-w6-lEH"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -9,6 +9,7 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var signOut: UIButton!
     @IBOutlet weak var blurView: UIView!
     @IBOutlet weak var sideMenuView: UIView!
     @IBOutlet weak var menuBarTableViwe: UITableView!
@@ -87,6 +88,17 @@ class MainVC: UIViewController {
             self.sideMenuView.transform = .identity
             self.blurView.isHidden = true
         }
+    }
+    
+    @IBAction func signOut(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
+    
+    @IBAction func searchBtnPressed(_ sender: Any) {
+        let vc = FiltrVC(nibName: "FiltrVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
 }

@@ -13,6 +13,9 @@
 		3D5770F229D4A4F40053C1BC /* UniverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5770F029D4A4F40053C1BC /* UniverCollectionViewCell.xib */; };
 		3D5770F529D4BCC60053C1BC /* UniverTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5770F329D4BCC60053C1BC /* UniverTableCell.swift */; };
 		3D5770F629D4BCC60053C1BC /* UniverTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5770F429D4BCC60053C1BC /* UniverTableCell.xib */; };
+		3DA0840929D57E10000C198D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0840729D57E10000C198D /* SideMenuCell.swift */; };
+		3DA0840A29D57E10000C198D /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0840829D57E10000C198D /* SideMenuCell.xib */; };
+		3DA0840C29D582DD000C198D /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0840B29D582DD000C198D /* MenuData.swift */; };
 		3DD9A81729D33EE0007848B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9A81629D33EE0007848B6 /* AppDelegate.swift */; };
 		3DD9A82029D33EE1007848B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD9A81F29D33EE1007848B6 /* Assets.xcassets */; };
 		3DD9A82329D33EE1007848B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD9A82129D33EE1007848B6 /* LaunchScreen.storyboard */; };
@@ -33,6 +36,9 @@
 		3D5770F029D4A4F40053C1BC /* UniverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniverCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D5770F329D4BCC60053C1BC /* UniverTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverTableCell.swift; sourceTree = "<group>"; };
 		3D5770F429D4BCC60053C1BC /* UniverTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniverTableCell.xib; sourceTree = "<group>"; };
+		3DA0840729D57E10000C198D /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		3DA0840829D57E10000C198D /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		3DA0840B29D582DD000C198D /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		3DD9A81329D33EE0007848B6 /* World.uz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.uz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD9A81629D33EE0007848B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD9A81F29D33EE1007848B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		3DD9A82B29D33F63007848B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DA0840B29D582DD000C198D /* MenuData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +121,7 @@
 				3D28A59C29D4670100B765A3 /* MainVC.xib */,
 				3D5770F029D4A4F40053C1BC /* UniverCollectionViewCell.xib */,
 				3D5770F429D4BCC60053C1BC /* UniverTableCell.xib */,
+				3DA0840829D57E10000C198D /* SideMenuCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 				3DD9A83629D34039007848B6 /* SignInVC.swift */,
 				3D5770EF29D4A4F40053C1BC /* UniverCollectionViewCell.swift */,
 				3D5770F329D4BCC60053C1BC /* UniverTableCell.swift */,
+				3DA0840729D57E10000C198D /* SideMenuCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 				3DD9A83929D34039007848B6 /* LoginVC.xib in Resources */,
 				3DD9A83129D33FF5007848B6 /* LanguageVC.xib in Resources */,
 				3D5770F629D4BCC60053C1BC /* UniverTableCell.xib in Resources */,
+				3DA0840A29D57E10000C198D /* SideMenuCell.xib in Resources */,
 				3DD9A83529D3401E007848B6 /* WelcomVC.xib in Resources */,
 				3DD9A83D29D340EF007848B6 /* SignIn.xib in Resources */,
 				3DD9A82329D33EE1007848B6 /* LaunchScreen.storyboard in Resources */,
@@ -211,9 +221,11 @@
 			files = (
 				3DD9A83029D33FF5007848B6 /* LanguageVC.swift in Sources */,
 				3D5770F529D4BCC60053C1BC /* UniverTableCell.swift in Sources */,
+				3DA0840C29D582DD000C198D /* MenuData.swift in Sources */,
 				3D28A59D29D4670100B765A3 /* MainVC.swift in Sources */,
 				3DD9A83429D3401E007848B6 /* WelcomVC.swift in Sources */,
 				3D5770F129D4A4F40053C1BC /* UniverCollectionViewCell.swift in Sources */,
+				3DA0840929D57E10000C198D /* SideMenuCell.swift in Sources */,
 				3DD9A83C29D340EF007848B6 /* LogInVC.swift in Sources */,
 				3DD9A83829D34039007848B6 /* SignInVC.swift in Sources */,
 				3DD9A81729D33EE0007848B6 /* AppDelegate.swift in Sources */,

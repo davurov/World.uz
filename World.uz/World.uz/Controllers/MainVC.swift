@@ -9,6 +9,7 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var menuBarTableViwe: UITableView!
     @IBOutlet weak var searchLbl: UILabel!
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var univerView: UIView!
@@ -34,7 +35,10 @@ class MainVC: UIViewController {
     func setUpTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        menuBarTableViwe.delegate = self
+        menuBarTableViwe.dataSource = self
         tableView.register(UINib(nibName: "UniverTableCell", bundle: nil), forCellReuseIdentifier: "cell")
+        menuBarTableViwe.register(UINib(nibName: "SideMenuCell", bundle: nil), forCellReuseIdentifier: "cell2")
     }
     
     @objc func didStartEditing() {
@@ -100,12 +104,24 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .clear
-        return cell
+        
+        if tableView == menuBarTableViwe {
+            let cell2 = menuBarTableViwe.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! SideMenuCell
+            cell2.nameLbl.text = MenuData.titels[indexPath.row]
+            cell2.sideImage.image = MenuData.images[indexPath.row]
+            return cell2
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UniverTableCell
+            
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        if tableView == menuBarTableViwe {
+            return 70
+        } else {
+            return 100
+        }
     }
 }

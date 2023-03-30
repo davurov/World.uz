@@ -9,6 +9,8 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var blurView: UIView!
+    @IBOutlet weak var sideMenuView: UIView!
     @IBOutlet weak var menuBarTableViwe: UITableView!
     @IBOutlet weak var searchLbl: UILabel!
     @IBOutlet weak var searchView: UIView!
@@ -17,10 +19,12 @@ class MainVC: UIViewController {
     @IBOutlet weak var countryView: UIView!
     @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpCollectionView()
         setUpTableView()
+        tapBlurView()
         searchTF.addTarget(self, action: #selector(didStartEditing), for: .editingDidBegin)
     }
     
@@ -41,6 +45,13 @@ class MainVC: UIViewController {
         menuBarTableViwe.register(UINib(nibName: "SideMenuCell", bundle: nil), forCellReuseIdentifier: "cell2")
     }
     
+    func tapBlurView() {
+        blurView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(blurViewTapped))
+        blurView.addGestureRecognizer(tap)
+        
+    }
+    
     @objc func didStartEditing() {
         searchLbl.isHidden = true
     }
@@ -57,7 +68,27 @@ class MainVC: UIViewController {
     }
     
     @IBAction func menuBarPressed(_ sender: Any) {
+        UIView.animate(withDuration: 0.5) {
+            self.sideMenuView.transform = CGAffineTransform(translationX: 350, y: 0)
+            self.blurView.isHidden = false
+        }
+        
     }
+    
+    @IBAction func dismissBtnPressed(_ sender: Any) {
+        UIView.animate(withDuration: 0.5) {
+            self.sideMenuView.transform = .identity
+            self.blurView.isHidden = true
+        }
+    }
+    
+    @objc func blurViewTapped() {
+        UIView.animate(withDuration: 0.5) {
+            self.sideMenuView.transform = .identity
+            self.blurView.isHidden = true
+        }
+    }
+    
 }
 
 extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -124,4 +155,6 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
             return 100
         }
     }
+    
+    
 }

@@ -30,6 +30,8 @@
 		3DD9A83929D34039007848B6 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD9A83729D34039007848B6 /* LoginVC.xib */; };
 		3DD9A83C29D340EF007848B6 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9A83A29D340EF007848B6 /* LogInVC.swift */; };
 		3DD9A83D29D340EF007848B6 /* SignIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD9A83B29D340EF007848B6 /* SignIn.xib */; };
+		3DED679629D865FE00C3A338 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DED679429D865FD00C3A338 /* ResultVC.swift */; };
+		3DED679729D865FE00C3A338 /* ResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DED679529D865FE00C3A338 /* ResultVC.xib */; };
 		3DFCF85129D6B37800A121BF /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCF84F29D6B37800A121BF /* FilterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		3DD9A83729D34039007848B6 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		3DD9A83A29D340EF007848B6 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		3DD9A83B29D340EF007848B6 /* SignIn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignIn.xib; sourceTree = "<group>"; };
+		3DED679429D865FD00C3A338 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		3DED679529D865FE00C3A338 /* ResultVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultVC.xib; sourceTree = "<group>"; };
 		3DFCF84F29D6B37800A121BF /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 				3D5770F429D4BCC60053C1BC /* UniverTableCell.xib */,
 				3DA0840829D57E10000C198D /* SideMenuCell.xib */,
 				3DA0841229D5A967000C198D /* FiltrVC.xib */,
+				3DED679529D865FE00C3A338 /* ResultVC.xib */,
 				3DBB4B7F29D6B992006BB37F /* FilterTableViewCell.xib */,
 			);
 			path = Views;
@@ -145,6 +150,7 @@
 				3D28A59B29D4670100B765A3 /* MainVC.swift */,
 				3DFCF84F29D6B37800A121BF /* FilterTableViewCell.swift */,
 				3DA0841129D5A967000C198D /* FiltrVC.swift */,
+				3DED679429D865FD00C3A338 /* ResultVC.swift */,
 				3DD9A83629D34039007848B6 /* SignInVC.swift */,
 				3D5770EF29D4A4F40053C1BC /* UniverCollectionViewCell.swift */,
 				3D5770F329D4BCC60053C1BC /* UniverTableCell.swift */,
@@ -211,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DED679729D865FE00C3A338 /* ResultVC.xib in Resources */,
 				3DD9A83929D34039007848B6 /* LoginVC.xib in Resources */,
 				3DD9A83129D33FF5007848B6 /* LanguageVC.xib in Resources */,
 				3DBB4B8029D6B992006BB37F /* FilterTableViewCell.xib in Resources */,
@@ -245,6 +252,7 @@
 				3DFCF85129D6B37800A121BF /* FilterTableViewCell.swift in Sources */,
 				3DD9A83829D34039007848B6 /* SignInVC.swift in Sources */,
 				3DD9A81729D33EE0007848B6 /* AppDelegate.swift in Sources */,
+				3DED679629D865FE00C3A338 /* ResultVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,7 +49,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="220"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w82-zN-bwX">
-                            <rect key="frame" x="345" y="61" width="28" height="28"/>
+                            <rect key="frame" x="345" y="59.666666666666657" width="28" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="28" id="4uv-VG-3re"/>
                                 <constraint firstAttribute="width" constant="28" id="ljE-kC-EJD"/>
@@ -61,7 +61,7 @@
                             </buttonConfiguration>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofZ-NR-m8r">
-                            <rect key="frame" x="10" y="120" width="373" height="50"/>
+                            <rect key="frame" x="10" y="117" width="373" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the value for the search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-x5-xY2">
                                     <rect key="frame" x="17" y="17" width="190" height="16"/>
@@ -104,8 +104,8 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uf-C2-Y6I">
-                            <rect key="frame" x="20" y="60" width="127" height="30"/>
-                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                            <rect key="frame" x="20" y="60" width="116" height="27"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="   Search">

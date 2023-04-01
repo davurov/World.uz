@@ -12,3 +12,7 @@ struct MenuData {
     static let images = [UIImage(systemName: "shareplay"),UIImage(systemName: "star"),UIImage(systemName: "exclamationmark.circle"),UIImage(systemName: "globe.americas.fill"),UIImage(systemName: "book.closed")]
     static let titels = ["Share app", "Rate app", "Report", "About Us", "Tutorial"]
 }
+
+struct FilterData {
+    static let courseType = ["Bachelor's Degree","Master’s Degree","PhD/Doctorate","Foundation","Language course","Short course","Online study"]
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="294" id="KGk-i7-Jjw" customClass="ResultCell" customModule="World_uz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="294"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="294"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTU-4V-nxs">
+                        <rect key="frame" x="10" y="5" width="421" height="284"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 983" translatesAutoresizingMaskIntoConstraints="NO" id="EAh-wb-b6m">
+                                <rect key="frame" x="0.0" y="0.0" width="421" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1ZX-Dz-ade"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uER-e9-xXX">
+                                <rect key="frame" x="0.0" y="0.0" width="421" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="131" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-VB-8t0">
+                                        <rect key="frame" x="20" y="10.333333333333334" width="401" height="29.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="253" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="753" text="Bachelor's Degree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYa-CX-cVJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.33333333333334" height="29.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-aP-fi6">
+                                                <rect key="frame" x="294.33333333333331" y="0.0" width="106.66666666666669" height="29.333333333333332"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cka-z4-kNM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.333333333333336" height="29.333333333333332"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="13" weight="semibold"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="likedBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ERO-4F-A0i"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehx-9c-CqN">
+                                                        <rect key="frame" x="53.333333333333371" y="0.0" width="53.333333333333343" height="29.333333333333332"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="arrow.up.left.and.down.right.and.arrow.up.right.and.down.left" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="13" weight="semibold"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="pdk-VB-8t0" firstAttribute="leading" secondItem="uER-e9-xXX" secondAttribute="leading" constant="20" id="Dmn-D3-TvR"/>
+                                    <constraint firstAttribute="height" constant="50" id="fH1-mJ-KFJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="pdk-VB-8t0" secondAttribute="trailing" id="iS6-v7-Xnm"/>
+                                    <constraint firstItem="pdk-VB-8t0" firstAttribute="centerY" secondItem="uER-e9-xXX" secondAttribute="centerY" id="obj-Vn-dqQ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OSO-gc-B7t">
+                                <rect key="frame" x="10" y="210" width="276.33333333333331" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Science (CTS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-Q7-TRy">
+                                        <rect key="frame" x="0.0" y="0.0" width="218.66666666666666" height="19.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ulm University of Applied Sciences Ulm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDd-xf-HkN">
+                                        <rect key="frame" x="0.0" y="29.666666666666657" width="276.33333333333331" height="17.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OSO-gc-B7t" firstAttribute="top" secondItem="EAh-wb-b6m" secondAttribute="bottom" constant="10" id="5CJ-sZ-Gh6"/>
+                            <constraint firstItem="uER-e9-xXX" firstAttribute="leading" secondItem="sTU-4V-nxs" secondAttribute="leading" id="8Nc-2q-aUd"/>
+                            <constraint firstItem="uER-e9-xXX" firstAttribute="top" secondItem="sTU-4V-nxs" secondAttribute="top" id="E5q-IM-Clr"/>
+                            <constraint firstItem="EAh-wb-b6m" firstAttribute="top" secondItem="sTU-4V-nxs" secondAttribute="top" id="IES-xx-acv"/>
+                            <constraint firstItem="EAh-wb-b6m" firstAttribute="leading" secondItem="sTU-4V-nxs" secondAttribute="leading" id="Iwy-rI-Tje"/>
+                            <constraint firstAttribute="trailing" secondItem="uER-e9-xXX" secondAttribute="trailing" id="O14-iL-uY0"/>
+                            <constraint firstItem="OSO-gc-B7t" firstAttribute="leading" secondItem="sTU-4V-nxs" secondAttribute="leading" constant="10" id="p97-Ld-hnw"/>
+                            <constraint firstAttribute="trailing" secondItem="EAh-wb-b6m" secondAttribute="trailing" id="sL5-Wf-G7e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sTU-4V-nxs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4tG-9o-YRu"/>
+                    <constraint firstAttribute="bottom" secondItem="sTU-4V-nxs" secondAttribute="bottom" constant="5" id="8t4-UZ-5ex"/>
+                    <constraint firstAttribute="trailing" secondItem="sTU-4V-nxs" secondAttribute="trailing" constant="10" id="Eff-8r-eia"/>
+                    <constraint firstItem="sTU-4V-nxs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="GPL-KI-gjj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <connections>
+                <outlet property="ColorView" destination="uER-e9-xXX" id="6UB-hg-MPs"/>
+                <outlet property="descLbl" destination="QDd-xf-HkN" id="m9A-WU-XiM"/>
+                <outlet property="nameLbl" destination="EDx-Q7-TRy" id="hXd-TK-uPy"/>
+                <outlet property="univerTypeLbl" destination="oYa-CX-cVJ" id="cLd-MK-Ry6"/>
+            </connections>
+            <point key="canvasLocation" x="179.38931297709922" y="122.53521126760565"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 983" width="355" height="140"/>
+        <image name="arrow.up.left.and.down.right.and.arrow.up.right.and.down.left" catalog="system" width="128" height="115"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

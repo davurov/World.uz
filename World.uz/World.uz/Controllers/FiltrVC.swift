@@ -36,7 +36,7 @@ class FiltrVC: UIViewController {
         addBorders()
         
         searchContener.layer.borderWidth = 1
-        searchContener.layer.borderColor = UIColor(red: 0, green: 0.131, blue: 0.596, alpha: 1).cgColor
+        searchContener.layer.borderColor = UIColor(red: 0.043, green: 0.192, blue: 0.722, alpha: 1).cgColor
         
         mainView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
     
@@ -112,6 +112,9 @@ class FiltrVC: UIViewController {
     }
     
     @IBAction func searchBtnPressed(_ sender: Any) {
+        let vc = ResultVC(nibName: "ResultVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
 }

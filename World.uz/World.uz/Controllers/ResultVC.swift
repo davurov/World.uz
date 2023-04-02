@@ -44,5 +44,11 @@ extension ResultVC: UITableViewDelegate, UITableViewDataSource {
         300
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let vc = ResultDetailVC(nibName: "ResultDetailVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
     
 }

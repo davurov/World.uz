@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CourseDetailsVC" customModule="World_uz" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrary to popular belief, Lorem Ipsum is not simply random text." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCv-Af-ctG">
+                    <rect key="frame" x="20" y="89" width="335" height="40.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m6-ki-3aE">
+                    <rect key="frame" x="20" y="139.66666666666666" width="335" height="62.333333333333343"/>
+                    <string key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 983" translatesAutoresizingMaskIntoConstraints="NO" id="BGa-QF-pKd">
+                    <rect key="frame" x="20" y="222" width="335" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="qgC-Pg-JQA"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-GJ-uEI">
+                    <rect key="frame" x="20" y="442" width="335" height="205"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <mutableString key="text">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</mutableString>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MCv-Af-ctG" secondAttribute="trailing" constant="20" id="5cP-Yv-Q2c"/>
+                <constraint firstItem="aBP-GJ-uEI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="D5g-hx-RIS"/>
+                <constraint firstItem="BGa-QF-pKd" firstAttribute="top" secondItem="5m6-ki-3aE" secondAttribute="bottom" constant="20" id="DeI-kK-pZ0"/>
+                <constraint firstItem="aBP-GJ-uEI" firstAttribute="top" secondItem="BGa-QF-pKd" secondAttribute="bottom" constant="20" id="Dg8-ra-Vfx"/>
+                <constraint firstItem="5m6-ki-3aE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FfZ-SX-k8T"/>
+                <constraint firstItem="MCv-Af-ctG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="K1c-Vt-YvJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BGa-QF-pKd" secondAttribute="trailing" constant="20" id="acR-NS-8UY"/>
+                <constraint firstItem="BGa-QF-pKd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hO0-Sj-bgI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aBP-GJ-uEI" secondAttribute="bottom" constant="20" id="kFD-8G-CV6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5m6-ki-3aE" secondAttribute="trailing" constant="20" id="qIj-6l-qeC"/>
+                <constraint firstItem="MCv-Af-ctG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="s1P-O3-Flb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aBP-GJ-uEI" secondAttribute="trailing" constant="20" id="vJG-HM-VJ6"/>
+                <constraint firstItem="5m6-ki-3aE" firstAttribute="top" secondItem="MCv-Af-ctG" secondAttribute="bottom" constant="10" id="zr8-gP-Gpe"/>
+            </constraints>
+            <point key="canvasLocation" x="43.511450381679388" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 983" width="355" height="140"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
